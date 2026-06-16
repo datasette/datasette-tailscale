@@ -1,3 +1,5 @@
+.ts-authkey
+.ts-state.json
 .venv
 __pycache__/
 *.py[cod]
