@@ -10,6 +10,7 @@ venv
 *.egg-info
 .DS_Store
 .vscode
+*.db
 dist
 build
 uv.lock

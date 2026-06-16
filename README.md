@@ -29,7 +29,11 @@ datasette install datasette-tailscale
 ## Usage
 
 Generate a [Tailscale auth key](https://login.tailscale.com/admin/settings/keys)
-(an ephemeral, reusable key is a good choice) and serve a database:
+(an ephemeral, reusable key is a good choice). These settings for the key work well:
+
+![Screenshot of a Tailscale "Generate auth key" modal dialog. Title: "Generate auth key" with a close (X) button. Description section: "Add an optional description for the key." with a text field containing "datasette-tailscale dev". Reusable: toggle on (blue), "Use this key to authenticate more than one device." Expiration: "Number of days until this auth key expires. This will not affect the node key expiry of any machine authenticated with this auth key." A number input set to "1" with minus and plus buttons and a "days" label. Below: "Must be between 1 and 90 days." DEVICE SETTINGS section: "These settings will apply to any devices authenticated using this key." Ephemeral: toggle on (blue), "Devices authenticated by this key will be automatically removed after going offline. Learn more" Tags: toggle off (gray), "Devices authenticated by this key will be automatically tagged. This will also disable node key expiry for the device. Learn more" Buttons at bottom: "Cancel" and "Generate key".](https://raw.githubusercontent.com/datasette/datasette-tailscale/refs/heads/main/tailscale-auth-key.png)
+
+Serve a database like this:
 
 ```bash
 datasette tailscale mydata.db --ts-authkey tskey-auth-xxxx
