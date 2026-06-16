@@ -7,6 +7,9 @@
 
 Run a Datasette instance on a Tailscale network
 
+> [!WARNING]
+> This is an *experimental alpha* plugin. The underlying library it uses ([tailscale-rs](https://github.com/tailscale/tailscale-rs#tailscale-rs)) is also experimental and carries no security guarantees.
+
 This plugin adds a `datasette tailscale` command that serves Datasette as its
 own node on your [Tailscale](https://tailscale.com/) tailnet. Datasette itself
 binds only to `127.0.0.1` — a userspace Tailscale node is the sole way in, so

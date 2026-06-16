@@ -1,6 +1,6 @@
 [project]
 name = "datasette-tailscale"
-version = "0.1"
+version = "0.1a0"
 description = "Run a Datasette instance on a Tailscale network"
 readme = "README.md"
 authors = [{name = "Simon Willison"}]
@@ -37,4 +37,3 @@ tailscale = "datasette_tailscale"
 [tool.pytest.ini_options]
 asyncio_mode = "strict"
 asyncio_default_fixture_loop_scope = "function"
-
