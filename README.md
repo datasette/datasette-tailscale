@@ -5,7 +5,7 @@
 [![Tests](https://github.com/datasette/datasette-tailscale/actions/workflows/test.yml/badge.svg)](https://github.com/datasette/datasette-tailscale/actions/workflows/test.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/datasette/datasette-tailscale/blob/main/LICENSE)
 
-Run a Datasette instance on a Tailscale network
+Run a Datasette instance on a [Tailscale](https://tailscale.com/) network
 
 > [!WARNING]
 > This is an *experimental alpha* plugin. The underlying library it uses ([tailscale-rs](https://github.com/tailscale/tailscale-rs#tailscale-rs)) is also experimental and carries no security guarantees.
